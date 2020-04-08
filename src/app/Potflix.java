@@ -54,16 +54,18 @@ public class Potflix {
         Temporada t5 = new Temporada();
         t5.numero = 5;
 
-        Episodio ep = new Episodio();
-        ep.numero = 7;
-        ep.nombre = "Say my name";
-        ep.duracion = 43;
+        Episodio ep = new Episodio(7, "Say my name", 43);
+
+        // ep.numero = 7;
+        // ep.nombre = "Say my name";
+        // ep.duracion = 43;
         t5.episodios.add(ep);
 
-        Episodio epOtro = new Episodio();
-        epOtro.numero = 5;
-        epOtro.nombre = "Ozymandias";
-        epOtro.duracion = 41;
+        Episodio epOtro = new Episodio(5, "Ozymandias", 41);
+
+        // epOtro.numero = 5;
+        // epOtro.nombre = "Ozymandias";
+        // epOtro.duracion = 41;
 
         t5.episodios.add(epOtro);
         breakingB.temporadas.add(t5);
@@ -84,24 +86,23 @@ public class Potflix {
         t1.numero = 1;
 
         Episodio ep = new Episodio();
-        ep.numero = 1;
-        ep.nombre = "Days gone bye";
-        ep.duracion = 43;
+        ep.setNumero(1);
+        ep.setNombre("Days gone bye");
+        ep.setDuracion(43);
         t1.episodios.add(ep);
 
         Episodio epOtro = new Episodio();
-        epOtro.numero = 2;
-        epOtro.nombre = "Guts";
-        epOtro.duracion = 43;
+        epOtro.setNumero(2);
+        epOtro.setNombre("Guts");
+        epOtro.setDuracion(43);
         t1.episodios.add(epOtro);
 
-
-        //WEBSODIO
-        Websodio websodio =new Websodio();
-        websodio.nombre="Hola";
-        websodio.numero=3;
-        websodio.duracion=15;
-        websodio.url= "http:/hola.com";
+        // WEBSODIO
+        Websodio websodio = new Websodio("Hola", 3, 15);
+        // websodio.nombre="Hola";
+        // websodio.numero=3;
+        // websodio.duracion=15;
+        websodio.url = "http:/hola.com";
         t1.episodios.add(websodio);
         //
 
@@ -109,18 +110,18 @@ public class Potflix {
         t2.numero = 2;
 
         Episodio ep1 = new Episodio();
-        ep1.numero = 1;
-        ep1.nombre = "What lies ahead ";
-        ep1.duracion = 43;
+        ep1.setNumero(1);
+        ep1.setNombre("What lies ahead ");
+        ep1.setDuracion(43);
         t2.episodios.add(ep1);
 
         Episodio epOtro1 = new Episodio();
-        epOtro1.numero = 2;
-        epOtro1.nombre = "Bloodletting";
-        epOtro1.duracion = 43;
+        epOtro1.setNumero(2);
+        epOtro1.setNombre("Bloodletting");
+        epOtro1.setDuracion(43);
         t2.episodios.add(epOtro1);
 
-//importante!!!
+        // importante!!!
         walkingD.temporadas.add(t1);
         walkingD.temporadas.add(t2);
         this.series.add(walkingD);
